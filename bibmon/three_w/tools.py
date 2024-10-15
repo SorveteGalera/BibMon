@@ -1,7 +1,7 @@
 import configparser
 import pandas as pd
-import bibmon._preprocess as preproc
-import bibmon._bibmon_tools as b_tools
+import _preprocess as preproc
+import _bibmon_tools as b_tools
 from typing import Literal, Tuple
 
 
