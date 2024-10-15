@@ -120,9 +120,7 @@ def load_3w(dataset_class: Literal["8"] = "8"):
         )
 
     with pkg_resources.path(three_w, "WELL-00019_20120601165020.parquet") as file:
-        print("file", file)
         with pkg_resources.path(three_w, "dataset.ini") as path:
-            print("path", path)
             ini = three_w.tools.load_dataset_ini(path)
             return (
                 pd.read_parquet(
